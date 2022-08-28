@@ -4,7 +4,8 @@
   "description": "Essa aplicação tem como objetivo testar a tela de cadastro do site https://buger-eats.vercel.app",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "run": "npx cypress run"
   },
   "author": "Leidiane Ferraz",
   "license": "ISC",

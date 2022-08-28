@@ -8,13 +8,13 @@ describe("Deve receber span informando todos os campos obrigatórios " +
   
         cy.contains(".button-success", "Cadastre-se para fazer entregas").click();
         
-        cy.contains('span', "É necessário informar o nome");
-        cy.contains('span', "É necessário informar o CPF");
-        cy.contains('span', "É necessário informar o email");
-        cy.contains('span', "É necessário informar o CEP");
-        cy.contains('span', "É necessário informar o número do endereço");
-        cy.contains('span', "Selecione o método de entrega");
-        cy.contains('span', "Adicione uma foto da sua CNH");
+        cy.contains('span', "É necessário informar o nome").should('be.visible');
+        cy.contains('span', "É necessário informar o CPF").should('be.visible');
+        cy.contains('span', "É necessário informar o email").should('be.visible');
+        cy.contains('span', "É necessário informar o CEP").should('be.visible');
+        cy.contains('span', "É necessário informar o número do endereço").should('be.visible');
+        cy.contains('span', "Selecione o método de entrega").should('be.visible');
+        cy.contains('span', "Adicione uma foto da sua CNH").should('be.visible');
         
     });
   });

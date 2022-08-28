@@ -18,7 +18,7 @@ describe("Deve testar tela de cadastro de ponta a ponta com todos os campos " +
     cy.get('input[accept="image/*"]').as("fileInput").attachFile("teste_cnh.jpg");
     cy.get(".button-success").click();
 
-    cy.contains(".swal2-html-container", "Recebemos os seus dados.");
+    cy.contains(".swal2-html-container", "Recebemos os seus dados.").should('be.visible');
     cy.wait(1500);
     cy.get('.swal2-confirm').click();
 
