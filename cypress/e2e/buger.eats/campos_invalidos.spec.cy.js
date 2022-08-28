@@ -1,11 +1,10 @@
-import "cypress-file-upload";
-
-describe("??????????", () => {
+describe("Deve retornar um span para cada campo preenchido" +
+"com formato inválido", () => {
     beforeEach(() => {
       cy.visit("https://buger-eats.vercel.app/deliver");
     });
     
-    it("???????????", () => {   
+    it("Testar campos com formatos inválidos ", () => {   
 
       cy.get('input[name="cpf"]').type("777");
       cy.contains(".button-success", "Cadastre-se para fazer entregas").click();
@@ -26,7 +25,6 @@ describe("??????????", () => {
       cy.get('input[name="whatsapp"]').type("34998046831");
 
       cy.contains(".button-success", "Cadastre-se para fazer entregas").click();
-      
          
     });
   });

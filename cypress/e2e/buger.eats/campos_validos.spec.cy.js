@@ -1,6 +1,5 @@
-import "cypress-file-upload";
-
-describe("Testar tela de cadastro de ponta a ponta", () => {
+describe("Deve testar tela de cadastro de ponta a ponta com todos os campos " + 
+"preenchidos com dados válidos e retornar tela home.", () => {
   beforeEach(() => {
     cy.visit("https://buger-eats.vercel.app/deliver");
   });
@@ -20,6 +19,7 @@ describe("Testar tela de cadastro de ponta a ponta", () => {
     cy.get(".button-success").click();
 
     cy.contains(".swal2-html-container", "Recebemos os seus dados.");
+    cy.wait(1500);
     cy.get('.swal2-confirm').click();
 
   });
