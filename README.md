@@ -2,7 +2,7 @@
 
 - Nessa aplicação de testes, a equipe poderá acompanhar possíveis bugs que ocasionalmente
 venham a aprecer durante o processo de desenvolvimento da aplicação.
-- Inicialmente foram mapeados os casos mais comuns, onde o usuário da mesma possam
+- Inicialmente foram mapeados os casos mais comuns, onde o usuário da mesma possa
 preencher todos os campos com dados válidos, onde ele pode deixar campos vazios e/ou 
 preencher com dados inválidos.
 - Para rodar este projeto, será necessário:
